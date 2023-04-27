@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--FOR EMAIL.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!--FOR EMAIL.JS-->
+    <script>
+(function() {
+    emailjs.init("user_QobomRXcDjhydC93mxlej");
+})();
+    </script>
+    <title>Swedish Tours 2023</title>
+</head>
+
+<body>
+    <header>
+        <!--NAV W3SCHOOLS-->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active btn-grad">SWEDEN</a>
+            <a href="#stockholm1">Stockholm</a>
+            <a href="#highcoast2">The High Coast</a>
+            <a href="#gotland3">Gotland</a>
+            <a href="#contactForm">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+         
+        </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <section class="home-container" id="home">
+        <!--HOME PAGE-->
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 d-flex justify-content-center ">
+                    <div class="hero-sign text-center">
+                        <div>
+
+                            <p class="welcome">Discover Sweden</p>
+                        <p><a class="btn btn-sm btn-light" href="#contactForm">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--WELCOME-->
+    <main>
+        <div class="text-center">
+            <h1 class="welcome-contact-swedish">Välkommen till Sverige</h1>
+            <p class="welcome-contact-english">Welcome to Sweden</p>
+            <p class="welcome-text">Sweden,<br> a European country in the north, with a lot of history, art and nature, and of course, the northen lights that illuminates the skyes during the long winternights.<br> Home of Norsemen, also called Vikings.<br>
+        </div>
+        <!--Start of Stodkholm-->
+        <div id="stockholm1" class="hero-images">
+            <br><br>
+            <div class="section-container text-center">
+                <h2 class="section-header"><span class="colortext">Stockholm</span></h2>
+                <p class="section-text">Stockholm is the beautiful capital city of Sweden.</p>
+            </div>
+        </div>
+        <!--CARDS FROM W3SCHOOLS AND AMENDED-->
+        <div class="text-center attractions">Attractions In Stockholm</div>
+        <br>
+        <!--Stockholms Attractions-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" id="">
+                <div class="card h-100">
+                    <img src="assets/images/radhuset.jpg" class="card-img-top" alt="city-hall" />
+                    <a href="#map"
+                                class="choices-btn btn"
+                                onclick="choosePlace('city-hall')"
+                                data-lat="59.192940" 
+                                data-lng="18.021860">View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">City Hall,
+                            <br>Stockholm
+                        </h5>
+                        <p class="card-content"> The City Hall in the heart of Stockholm, is a beatiful building in a Nordic Gothic style and also Venecian Renaissance style. The building was finished in 1923.
+                            The building have many different chambers, all with its own style and art as the Blue Hall, The Prince Gallery and so on. A must see in Stockholm.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Stockholm_City_Hall" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="drottningholm">
+                <div class="card h-100">
+                    <img src="assets/images/drottningholm.jpg" class="card-img-top" alt="Drottningholm Palace" />
+                    <a href="#map"
+                                class="choices-btn btn"
+                                onclick="choosePlace('drottningholm')"
+                                data-lat="59.321743"
+                                data-lng="17.886305"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Drottningholm Palace,
+                            <br>Stockholm
+                        </h5>
+                        <p class="card-content">
+                            Drottningholm Palace is located in a small island called Lovön, close to Stockholm, Sweden, 
+                            and it was designed by Willem Boy and others 1580 to the Queen Hedwig Eleonora, and that is where the name Drottningholms Palace come from, the Islet of the Queen.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Drottningholm_Palace"target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="vasa">
+                <div class="card h-100">
+                    <img src="assets/images/skepp-vasa.jpg" class="card-img-top" alt="Vasa War Ship" />
+                    <a href="#map"
+                                class="choices-btn btn"
+                                onclick="choosePlace('vasa-museum-stockholm')"
+                                data-lat="59.194058"
+                                data-lng="18.052900"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Vasa Museum,
+                            <br>Stockholm
+                        </h5>
+                        <p class="card-content">
+                            The Vasa Warship is ship that sank in its first voyage 1628. It is a beautiful and well kept 
+                            ships from that time, so this Museum is really worth visiting while you are in Stockholm.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Vasa_Museum" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--STOCKHOLMS HOTELS-->
+        <div class="text-center attractions">Hotels In Stockholm</div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" id="hotel">
+                <div class="card h-100">
+                    <img src="assets/images/grandhotel.webp" class="card-img-top" alt="Grand Hotel Stockholm" />
+                    <a href="#map"
+                                class="choices-btn btn"
+                                onclick="choosePlace()"
+                                data-lat="59.3297027"
+                                data-lng="18.0755897"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Hotel,
+                            <br>Stockholm
+                        </h5>
+                        <p class="card-content">
+                            The Grand Hotel is a traditional, historical hotel with elegant decors and modern facilities with a superb location 
+                            just a few minutes walk to the Royal Palace, the Kings Garden and the most exclusive shopping avenues are,  but also the National Museum.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://www.tripadvisor.com/Hotel_Review-g189852-d207781-Reviews-Grand_Hotel-Stockholm.html" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="nobishotel">
+                <div class="card h-100">
+                    <img src="assets/images/nobis07.webp" class="card-img-top" alt="Nobis Hotel Stockholm" />
+                    <a href="#maps"
+                                class="choices-btn btn"
+                                onclick="choosePlace('nobis-hotel-stockholm')"
+                                data-lat="59.333189"
+                                data-lng="18.073797"></a>
+                                View On Map
+                    <div class="card-body">
+                        <h5 class="card-title">Nobis Hotel,
+                            <br>Stockholm
+                        </h5>
+                        <p class="card-content">
+                            While staying at Nobis Hotel Stockholm, when you want to have the best! In an exclusive area where you just can take a walk to theaters, the Opera House and all the finest boutiques and restaurants.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://www.tripadvisor.se/Hotel_Review-g189852-d1845619-Reviews-Nobis_Hotel_Stockholm-Stockholm.html#/media/1845619/563988609:p/?albumid=101&type=0&category=101" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="#villadagmar">
+                <div class="card h-100">
+                    <img src="assets/images/Villa-Dagmar.jpg" class="card-img-top" alt="Villa Dagmar Stockholm" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('villa-dagmar-stockholm')"
+                                data-lat="58.343108"
+                                data-lng="16.115388"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Villa Dagmar,
+                            <br>Stockholm
+                        </h5>
+                        <p class="card-content">
+                            Welcome to Villa Dagmar, a nice option for selective travellers. Located in the most exclusive area of Stockholm City, with the marketplace Östermalms Torg just a few meters away. Perfectly situated if you would like to take some walks around the City! 
+                            Exclusive rooms and a interior outerplace with a glasroof on the top of it, makes this hotel so special. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://www.tripadvisor.se/Hotel_Review-g189852-d21281966-Reviews-Villa_Dagmar-Stockholm.html" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END OF STOCKHOLM-->
+        <br>
+        <!--START OF THE HIGH COAST -->
+        <div id="highcoast2" class="hero-images">
+            <br><br>
+            <div class="section-container text-center">
+                <h2 class="section-header"><span class="colortext">The High Coast</span></h2>
+               
+            </div>
+        </div>
+        <!--THE HIGH COAST´s ATTRACTIONS-->
+        <div class="text-center attractions">Attractions in The High Coast</div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" id="skuleberget">
+                <div class="card h-100">
+                    <img src="assets/images/wall.jpg" class="card-img-top" alt="cliff-path in Skuleberg" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('skuleberget')"
+                                data-lat="63.4947"
+                                data-lng="17.6169">View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Skuleberget,
+                            <br>The High Coast
+                        </h5>
+                        <p class="card-content"> You can walk around in a path between the solid walls made by the glacier that once made up its way trough this cliffs. You can also climb up for this cliffs and stand up and have an incredible view over the nature that surrounds this hihg cliff.
+                           
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Skuleberget" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="kvarkenArchipelag">
+                <div class="card h-100">
+                    <img src="assets/images/kajak-hoga-kusten.jpg" class="card-img-top" alt="View of The High Cost Archipelag" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('kvarken')"
+                                data-lat="60.1348"
+                                data-lng="12.5163"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Archipelag of Kvarken,
+                            <br>High Coast
+                        </h5>
+                        <p class="card-content">
+                           The High Coast have a wonderful archipelag called Kvarken that starts off with this fjord: Gaviksfjard. The waters are calm so you can take a swim, you can go on kayaking to experience the natur by the water, you can go fishing or just relax.
+                
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Kvarken" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="hike">
+                <div class="card h-100">
+                    <img src="assets/images/hike-high-coast.jpg" class="card-img-top" alt="View of The High Coast" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('hike-in-the-high-coast')"
+                                data-lat="63.0833"
+                                data-lng="18.3324"
+                                > View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Hiking in The High Coast,
+                            <br>The High Coast
+                        </h5>
+                        <p class="card-content">
+                            The High Coast is made for hiking because there are so many and long pathways you can experience, and you will be delighted with the trees, the mountains, the views and the clean air. If you would prefer, you could also go for bikerides, there are many to hire, even e-bikes. Just forget all your stress! 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/High_Coast" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--HIGH COAST HOTELS-->
+        <div class="text-center attractions">Hotels </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" id="hotellhogakusten">
+                <div class="card h-100">
+                    <img src="assets/images/hotel-hoga-kusten.jpg" class="card-img-top" alt="Hotell Hoga Kusten" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('hotellhogakusten')"
+                                data-lat="62.8030"
+                                data-lng="17.9515"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">hotellhogakusten,
+                            <br>The High Coast
+                        </h5>
+                        <p class="card-content">
+                     In this modern hotel, you can have so much confort as you can dream of, and at the same time enjoy
+                      a wonderful view of the nature outdors and whenever you feel for it,
+                      you can take as long excurssions in the nature as you wish.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://www.tripadvisor.com/Hotel_Review-g1568674-d2329834-Reviews-Hotell_Hoga_Kusten-Sandoverken_Vasternorrland_County_Midnight_Sun_Coast.html" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="eliteplazahotel">
+                <div class="card h-100">
+                    <img src="assets/images/elite-plaza-hotel.jpeg" class="card-img-top" alt="Elite Plaza Hotel" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('elite-plaza-hotel')"
+                                data-lat="63.2880"
+                                data-lng="18.1988"
+                                >View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Elite Plaza Hotel,
+                            <br>The High Coast
+                        </h5>
+                        <p class="card-content">
+                            This hotel offers a lot of facilities at the beach and so close to all the adventures, and they got restaurant, bar, gym, sauna and amazing views over the coastline. It is modern and you can also organize a businessmeeting in this hotel.
+
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://www.tripadvisor.se/Hotel_Review-g189821-d3863696-Reviews-Elite_Plaza_Hotel-Ornskoldsvik_Ornskoldsvik_Municipality_Vasternorrland_County_Midnigh.html" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="villasedin">
+                <div class="card h-100">
+                    <img src="assets/images/Villa-Sedin.jpg" class="card-img-top" alt="Bed and Breakfast Villa Sedin" />
+                    <a href="#map" class="choices-btn btn"
+                                onclick="choosePlace('villa-sedin')"
+                                data-lat="62.6308"
+                                data-lng="17.9378"
+                                > View On Map</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Bed and Breakfast Villa Sedin
+                            <br>The High Coast
+                        </h5>
+                        <p class="card-content">
+                            Situated in the center of Härnösand, a beautiful village at the seaside of the northen part of Sweden and also a part of The High Coast, Villa Sedin Bed and Breakfast is a charming and typical wooden house of the area and can offer their guests a relaxed enviroment to recover after all the excursions in the neighborhood.  </p>
+
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="https://www.tripadvisor.se/Hotel_Review-g189830-d6450947-Reviews-Sedin_Villa_Bed_Breakfast-Harnosand_Harnosand_Municipality_Vasternorrland_County_Midni.html" role="button">Book Your Stay</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END OF THE HIGH COAST-->
+        <br>
+        <  <!--START OF GOTLAND-->
+                <div id="gotland3" class="hero-images">
+                    <br><br>
+                    <div class="section-container text-center">
+                        <h2 class="section-header"><span class="colortext">Gotland</span></h2>
+                        <p class="section-text">The Beautiful Island in The Baltic sea.</p>
+        <br>
+                    </div>
+                </div>
+        
+                <!--GOTLAND ATTRACTIONS-->
+                <div class="text-center attractions">Attractions in Gotland</div>
+                <br>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" id="visby">
+                        <div class="card h-100">
+                            <img src=”assets/images/gotland-visby.jpg” class="card-img-top" alt=”Visby, Gotland"/>
+                            <a href="#map" class="choices-btn btn"
+                                        onclick="choosePlace('visby-gotland')"
+                                        data-lat="57.6272"
+                         data-lng="18.2385">
+                                            View On Map</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Visby
+                                    <br>Gotland
+                                </h5>
+                                <p class="card-content">
+        Visby is the capital of the island Gotland in the Baltic Sea and it has a history, nature, culture. his fairy-tale town is a national treasure. It’s also a UNESCO World Heritage Site, well-preserved medieval town dates back to the 12th century and contains several remarkable ruins .
+                            </div>
+                            <div class="card-footer">
+                                <small class="https://en.wikipedia.org/wiki/Visby" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="">
+                        <div class="card h-100">
+                            <img src="assets/images/raukar.jpg" class="card-img-top" alt="Ljugarn, 
+                            <a href="#map" class="choices-btn btn"
+                                        onclick="choosePlace('ljugarn')"
+                                        data-lat=" 57.9554"
+                        data-lng="19.2429"
+                                        >
+                                            View On Map</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Ljugarn,
+                                    <br>Gotland
+                                </h5>
+                                <p class="card-content">
+          Ljugarn is situated at the Eastcoast of Gotland and it is a nature reserve in Sweden with a high concentration of rauks, pilars of stones shaped by the sea.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Ljugarn" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="fårö">
+                        <div class="card h-100">
+                            <img src="assets/images/sudersand.jpg" class="card-img-top" alt="Sudersand Beach" />
+                            <a href="#map" class="choices-btn btn"
+                                        onclick="choosePlace('fårö-gotland')"
+                                        data-lat="57.9554"
+                        data-lng="19.2429"
+                                        > View On Map</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Fårö,
+                                    <br>Gotland
+                                </h5>
+                                <p class="card-content">
+                                   in Fårö you can find the Sudersand that is a 4 km long beach with soft sand at the south of Fårö, a small island that belongs to Gotland. It is one of the best and most apprecieted beaches of the Swedish. 
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href="https://en.wikipedia.org/wiki/F%C3%A5r%C3%B6" target="_blank" target="_blank" class="btn btn-success" role="button">Read More</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!--GOTLAND HOTELS-->
+                <div class="text-center attractions">Hotels In Gotland</div>
+                <br>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" id="clarion-hotel-visby">
+                        <div class="card h-100">
+                            <img src="assets/images/clarion-hotel-visby.jpg" class="card-img-top" alt="Clarions Hotel, Gotland"/> 
+                            <a href="#map" class="choices-btn btn"
+                                        onclick="choosePlace('clarion-visby')"
+                                        data-lat="57.6384"
+                                        data-lng="18.2908"
+                                        >View On Map</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Clarion Hotel,
+                                    <br>Gotland
+                                </h5>
+                                <p class="card-content">
+                                   Clairon Hotel is located in a quiet corner of Visby but close to many interesting historical places but also to popular restaurants.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href=""https://www.tripadvisor.com/Hotel_Review-g202560-d233228-Reviews-Clarion_Hotel_Wisby-Visby_Gotland.html"" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="id="hotelnoviresort">
+                        <div class="card h-100">
+                            <img src="hotel-novi-resort-visby.jpg" class="card-img-top" alt="Hotel Novi Resort Visby, Gotland"/>
+                            <a href="#map" class="choices-btn btn"
+                                        onclick="choosePlace('novi-resort-gotland')"
+                                        data-lat="57.6532"
+                        data-lng="18.3042"
+                                        >View On Map</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Hotel Novi Resort
+                                    <br>Gotland
+                                </h5>
+                                <p class="card-content">
+                                    Novi Hotel is situated in the town of Visby but just by the seaside and the beach. Therefor Novi Hotel has beautiful vies of the beach both from the pool and the restaurant that is one of the finest on the island.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href="https://www.tripadvisor.com/Hotel_Review-g202560-d12012237-Reviews-Novi_Resort_Visby-Visby_Gotland.html" target="_blank" class="btn btn-suc" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="st.clemens">
+                        <div class="card h-100">
+                            <img src="assets/images/hotell-s-t-clemens.jpg" class="card-img-top" alt="Hotel St.Clemens, Gotland"/>
+                            <a href="#map" class="choices-btn btn"
+                                        onclick="choosePlace('st.clemens-visby')"
+                                        data-lat="57.6430"
+                        data-lng="18.2932"
+                                        >View On Map</a>
+                            <div class="card-body">
+                                <h5 class="card-title">St.Clemens, Visby,
+                                    <br>Gotland
+                                </h5>
+                                <p class="card-content">
+                                          This hotel is in the center of the town of Visby and has two beautiful courtyards, so that you can relax. It is very confortable and also eco-fredly. 
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href=""https://www.tripadvisor.com/Hotel_Review-g202560-d233227-Reviews-Hotel_St_Clemens-Visby_Gotland.html" target="_blank" class="btn btn-success" role="button">Book Your Stay</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+        
+        <!--MAP-->                              
+        <div id="map"></div>
+        <script src="assets/js/map.js"></script>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <!--GOOGLE MAP USING UNIQUE API KEY-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly" async></script>
+        <!--CONTACT-->
+        <section class="form-container container-fluid pt-2 pb-2" id="contactForm">
+            <header class="text-center mb-2 mt-2">
+                <h1 class="header-two pb-2">Contact Us</h1>
+                <p>Should you have any further questions please contact us through the following form.</p>
+            </header>
+            <form class="shadow p-3 mb-3 bg-white rounded text-center pb-4" onsubmit="return sendMail(this);">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 form-group mb-3">
+                        <label for="first" class="header-minor form-label mb-2">First Name</label>
+                        <input name="first" type="text" id="first" class="form-control form-input" required>
+                    </div>
+                    <div class="col-md-6 col-sm-12 form-group mb-3">
+                        <label for="last" class="header-minor form-label mb-2">Last Name</label>
+                        <input name="last" type="text" id="last" class="form-control form-input" required>
+                    </div>
+                    <div class="col-12 col-lg-6 form-group mb-3">
+                        <label for="email" class="header-minor form-label mb-2">Email Address</label>
+                        <input name="email" type="email" id="email" class="form-control form-input" required>
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-3">
+                        <label for="number" class="header-minor form-label mb-2">Phone Number</label>
+                        <input name="number" type="tel" id="number" class="form-control form-input">
+                    </div>
+                    <div class="form-group col-12 mb-3">
+                        <label for="message" class="header-minor form-label mb-2">How can we help?</label>
+                        <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group col-12 mb-3">
+                        <button type="submit" id="submit-button" class="btn form-btn btn-success hvr-grow center" value="send">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="container-fluid footer-bg">
+        <div class="social-links text-center">
+            <h5 class="footer-heading">Follow Us</h5>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class=" fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.tripadvisor.com/" target="_blank" aria-label="Trip-advisor" rel="noopener"><i class="fa fa-tripadvisor"></i></a
+        </div>
+        <hr>
+        <div class="footer-copyright text-center">
+            <h6 class="footer-legal"><small>Maria Hernandez | Course Project</small></h6>
+        </div>
+    </footer>
+
+    <!--LINK TO EMAIL.JS FILE FOR EMAIL-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
+</body>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
